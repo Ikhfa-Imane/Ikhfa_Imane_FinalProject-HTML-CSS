@@ -4,6 +4,11 @@ body{
     background-color: #e7d6b2;
 }
 
+
+header{
+    border-bottom: 2px black solid;
+}
+
 .DivPrincipale{
     display: flex;
     align-items: center;
@@ -30,7 +35,6 @@ body{
 header div  h1{
     color: rgb(112, 157, 112);
     font-size: xx-large;
-    width: 200px;
 }
 header div h1 span{
     color: white;
@@ -56,3 +60,5 @@ header div h1 span{
     height: 2px;
     background-color: #df873c;
 }
+
+@media(max-width)
