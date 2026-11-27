@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body{
-    background-color: #e7d6b2;
+    background-color:#E9D7B3;
 }
 
 
@@ -61,4 +61,8 @@ header div h1 span{
     background-color: #df873c;
 }
 
-@media(max-width)
+@media (max-width:450px){
+    .NavBarre{
+        display: none;
+    }
+}
