@@ -60,9 +60,49 @@ header div h1 span{
     height: 2px;
     background-color: #df873c;
 }
+.closeBtn, .openBtn, #checkMenu{
+    display: none;
+}
 
-@media (max-width:450px){
+@media (max-width:640px){
     .NavBarre{
         display: none;
+        
     }
+    .buttonnav{
+        display: none;
+    }
+
+    .openBtn{
+
+        display: block;
+    }
+
+    header:has(input:checked) .openBtn{
+        display: none;
+    }
+    header:has(input:checked) .closeBtn{
+        display: block;
+    }
+
+    #checkMenu:checked ~ .NavBarre{
+        left: 0;
+    }
+
+
+
+    header::after{
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        opacity: 0;
+        top: 10vh;
+        z-index: -1;
+    }
+    header:has(input:checked)::after {
+        opacity: 0.5;
+    }
+
 }
